@@ -1,0 +1,144 @@
+<h4 class="mb-3">Filtros de Busca</h4>
+    
+<div id="filtroContentDiv" class="container-fluid p-3 mb-2 text-dark rounded div-form-filtro">
+  <div class="row">
+  <form action="" class="col-12 justify-content-center">
+        <div class="form-row">
+          <div class="col-md-3 mb-1  offset-md-3">                
+            <label for="validationDefault01">Nome</label>
+            <input type="text" class="form-control" id="validationDefault01" placeholder="" value="" required>
+          </div>
+          <div class="col-md-3 mb-1">
+            <label for="validationDefault02">Sobrenome</label>
+            <input type="text" class="form-control" id="validationDefault02" placeholder="" value="" required>
+          </div>              
+        </div>
+        <div class="form-row">                
+          <div class="col-md-3 mb-1 offset-md-3">
+            <label for="validationDefault03">Endereço</label>
+            <input type="text" class="form-control" id="validationDefault03" placeholder="City" required>
+          </div>            
+          <div class="col-md-3 mb-2">
+              <label for="validationDefaultUsername">Nome de Usuário</label>
+              <div class="input-group">
+                <input type="text" class="form-control" id="validationDefaultUsername" placeholder="" required>
+              </div>
+            </div>
+        </div>
+        <div class="form-row">            
+                           
+          <div class="col-md-6 mb-2 offset-md-3">
+              <label for="country">Tipo de Perfil</label>
+              <select class="custom-select d-block w-100" id="country" required="">
+                <option value="">Selecione um perfil...</option>
+                <option>Administrador</option>
+                <option>Usuário-Triador</option>
+                <option>Usuário-Finalizador</option>
+              </select>
+           </div>
+
+        </div>
+
+        <div class="form-row">      
+          <div class="col-md-3 offset-md-3">                
+              <input class="form-check-input ml-1 p-1" type="checkbox" value="" id="invalidCheck2" required>
+              <label class="form-check-label ml-3 p-1" for="invalidCheck2">
+                Somente usuários ativos
+              </label>
+          </div>
+
+          <div class="col-md-3 mb-0">                    
+              <button class="btn btn-dark float-right w-50" type="submit">Consultar</button>                    
+          </div>              
+
+        </form>
+                            
+      </div>
+        
+      </form>
+    </div>
+    </div>
+
+
+    <hr>
+
+<div class="container-fluid">
+
+    <h4 class="mb-3">Listagem de Usuários</h4>
+
+    <table class="table table-striped ">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Login</th>
+            <th scope="col">E-Mail</th>
+            <th scope="col">Endereço</th>
+            <th scope="col">Telefone</th>
+            <th scope="col">Perfil</th>
+            <th scope="col">Ativo</th>
+            <th scope="col">Ações</th>              
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Jack Jones</td>
+            <td>jjones</td>
+            <td>jjones@gmail.com</td>
+            <td>Avenida das Américas, nº 1400</td>
+            <td>97878-5587</td>
+            <td>Usuário-Finalizador</td>                            
+            <td>Sim</td>
+            <td>
+                <a class="" href="#" role="button" data-placement="top" title="Editar">
+                    <img src="images/edit_icon.png" alt="Editar">                      
+                </a>
+            
+                <a class="delete_icon" href="#" role="button" title="Excluir">
+                    <img src="images/delete_icon.png" alt="Excluir">                      
+                </a>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>José Augusto</td>
+            <td>jaugusto</td>
+            <td>jaugusto@hotmail.com</td>
+            <td>Avenida Armando Lombardi, nº 712</td>
+            <td>3668-5511</td>
+            <td>Usuário-Triador</td>                            
+            <td>Sim</td>
+            <td>
+                <a class="" href="#" role="button" data-placement="top" title="Editar">
+                    <img src="images/edit_icon.png" alt="Editar">                      
+                </a>
+            
+                <a class="delete_icon" href="#" role="button" title="Excluir">
+                    <img src="images/delete_icon.png" alt="Excluir">                      
+                </a>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>João de Souza</td>
+            <td>jsouza</td>
+            <td>jsouza@bol.com.br</td>
+            <td>Rua Arapoca, nº 55</td>
+            <td>3660-7785</td>
+            <td>Administrador</td>                            
+            <td>Não</td>
+            <td>
+                <a class="" href="#" role="button" data-placement="top" title="Editar">
+                    <img src="images/edit_icon.png" alt="Editar">                      
+                </a>
+            
+                <a class="delete_icon" href="#" role="button" title="Excluir">
+                    <img src="images/delete_icon.png" alt="Excluir">                      
+                </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>        
+
+</div>

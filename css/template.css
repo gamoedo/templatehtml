@@ -1,0 +1,48 @@
+.menu-top-bar{
+    min-height: 3rem;
+    background-color: #563d7c;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.05), inset 0 -1px 0 rgba(0,0,0,.1);
+    color: white;
+}
+
+.img_menu{
+    width: 35px;
+    height: 35px;
+}
+
+.top-bar-items{
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+}
+
+.top-bar-dropdown{
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 5px;
+    color: white;
+}
+
+.top-bar-first-item{
+    margin-left: 100px;
+    color: white;
+}
+
+a.nav-item{
+    color: white;
+}
+
+a.nav-item-disabled{
+    color: #6c757d;
+}
+
+.delete_icon{
+    margin-left: 10px;
+}
+
+.div-form-filtro{
+    /* background-color: #e6e4e2;  */
+    background-color: #e1e8ea;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.05), inset 0 -1px 0 rgba(0,0,0,.1);    
+}

@@ -1,0 +1,118 @@
+<div class="col-md-6 order-md-1">
+        <h4 class="mb-3">Cadastro de Usuário</h4>
+        <form class="needs-validation" novalidate="">
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="firstName">Primeiro Nome</label>
+              <input type="text" class="form-control" id="firstName" placeholder="Ex: José" value="" required="">
+              <div class="invalid-feedback">
+                Primeiro nome é obrigatório.
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="lastName">Sobrenome</label>
+              <input type="text" class="form-control" id="lastName" placeholder="Ex: de Arimatéia" value="" required="">
+              <div class="invalid-feedback">
+                Sobrenome é obrigatório.
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="username">Nome de Usuário</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">@</span>
+              </div>
+              <input type="text" class="form-control" id="username" placeholder="jose.arimateia" required="">
+              <div class="invalid-feedback" style="width: 100%;">
+                Nome de usuário é obrigatório
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="email">E-mail <span class="text-muted">(Opcional)</span></label>
+            <input type="email" class="form-control" id="email" placeholder="Ex: user@gmail.com">
+            <div class="invalid-feedback">
+              E-mail é obrigatório.
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="address">Endereço</label>
+            <input type="text" class="form-control" id="address" placeholder="Ex: Avenida das Américas, nº500" required="">
+            <div class="invalid-feedback">
+              Endereço é obrigatório.
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="address2">Endereço 2 <span class="text-muted">(Optional)</span></label>
+            <input type="text" class="form-control" id="address2" placeholder="">
+          </div>
+
+          <div class="row">
+            <div class="col-md-5 mb-3">
+              <label for="country">País</label>
+              <select class="custom-select d-block w-100" id="country" required="">
+                <option value="">Selecione um país...</option>
+                <option>Brasil</option>
+                <option>Estados Unidos</option>
+              </select>
+              <div class="invalid-feedback">
+                Por favor, escolha um país válido!
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="state">Estado</label>
+              <select class="custom-select d-block w-100" id="state" required="">
+                <option value="">Selecione um estado...</option>
+                <option>Rio de Janeiro</option>
+                <option>São Paulo</option>
+                <option>Minas Gerais</option>
+                <option>Espírito Santo</option>
+              </select>
+              <div class="invalid-feedback">
+                Por favor, escolha um estado válido!
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="cep">CEP</label>
+              <input type="text" class="form-control" id="cep" placeholder="Ex: 26500-000" required="">
+              <div class="invalid-feedback">
+                CEP é obrigatório.
+              </div>
+            </div>
+          </div>            
+          <label for="same-address">Selecione uma opção</label>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="same-address">
+            <label class="custom-control-label" for="same-address">Shipping address is the same as my billing address</label>
+          </div>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="save-info">
+            <label class="custom-control-label" for="save-info">Save this information for next time</label>
+          </div>
+          
+          <div class="d-block my-3">
+            <label for="credit">Selecione outra opção</label>
+            <div class="custom-control custom-radio">                
+              <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked="" required="">
+              <label class="custom-control-label" for="credit">Credit card</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required="">
+              <label class="custom-control-label" for="debit">Debit card</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required="">
+              <label class="custom-control-label" for="paypal">PayPal</label>
+            </div>
+          </div>
+          
+          </div>
+          <hr class="mb-4">
+          <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
+        </form>
+      </div>
